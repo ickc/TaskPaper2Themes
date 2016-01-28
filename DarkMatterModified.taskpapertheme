@@ -40,7 +40,7 @@
     <characterStyle id="project" fontID="project" foregroundColorID="project" />
     <paragraphStyle id="project" extendsParagraphStyleID="base" paragraphSpacingBefore="10" paragraphSpacing="5" />
     <entryRule matchesQuery="type = project" lineCharacterStyleID="project" paragraphStyleID="project" />
-    <!-- The line above corrected March 10, 2009. Error was "type = "project"" --too many quotes  -BuzCranne   -->
+    <!-- The line above corrected March 10, 2009. Error was "type = "project"" too many quotes  -BuzCranne   -->
 
     <!-- Note style. This section defines the styles that are applied to note lines. -->
     <color id="note" red="0.5" green="0.5" blue="0.5" alpha="1.0" />
