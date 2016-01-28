@@ -1,0 +1,80 @@
+<!-- Theme by Denrael -->
+
+<theme>
+  <!--Denim Color Scheme - Created by Denrael-->
+  <color id="bluejeans" red="0.26" green="0.32" blue="0.42" alpha="1.0"/>
+  <color id="buttermilk" red="100" green="0.95" blue="0.71" alpha="1.0"/>
+  <color id="workgetthemoney" red="0.75" green="0.80" blue="0.86" alpha="1.0"/>
+  <color id="fog" red="0.71" green="0.79" blue="0.71" alpha="1.0"/>
+  <color id="lostblue" red="0.26" green="0.40" blue="0.51" alpha="1.0"/>
+  <color id="orangetab" red="0.97" green="0.27" blue="0.02" alpha="1.0"/>
+  <color id="redtab" red="0.41" green="0.00" blue="0.07" alpha="1.0"/>
+  <color id="seashell4" red="0.55" green="0.53" blue="0.51" alpha="1.0"/>
+  <color id="summerdenim" red="0.88" green="0.89" blue="0.91" alpha="1.0"/>
+  <color id="slategray" red="0.49" green="0.62" blue="0.75" alpha="1.0"/>
+  <!--Mapping to taskpaper entities-->
+  <color id="foreground" extendsColorID="buttermilk"/>
+  <color id="selection" extendsColorID="seashell4"/>
+  <color id="handle" extendsColorID="lostblue"/>
+  <color id="someday" extendsColorID="fog"/>
+  <color id="insertionPoint" extendsColorID="redtab"/>
+  <color id="header" extendsColorID="summerdenim"/>
+  <color id="tag" extendsColorID="slategray"/>
+  <color id="done" extendsColorID="slategray"/>
+  <color id="background" extendsColorID="bluejeans"/>
+  <color id="note" extendsColorID="workgetthemoney"/>
+  <color id="task" extendsColorID="buttermilk"/>
+  <color id="project" extendsColorID="summerdenim"/>
+  <color id="overdue" extendsColorID="orangetab"/>
+  <color id="today" extendsColorID="orangetab"/>
+  <color id="priority" extendsColorID="orangetab"/>
+  <!--Task-->
+  <color id="task" extendsColorID="task"/>
+  <font id="task" extendsFontID="base"/>
+  <characterStyle foregroundColorID="task" id="task"/>
+  <entryRule paragraphStyleID="base" matchesQuery="type = task" lineCharacterStyleID="task"/>
+  <!--@someday-->
+  <color id="someday" extendsColorID="someday"/>
+  <characterStyle foregroundColorID="someday" id="someday" fontID="base"/>
+  <entryRule matchesQuery="@someday and not @done" lineCharacterStyleID="someday"/>
+  <!--Project-->
+  <color id="project" extendsColorID="project"/>
+  <entryRule paragraphStyleID="project" matchesQuery="type = "project"" lineCharacterStyleID="project"/>
+  <characterStyle foregroundColorID="project" id="project" fontID="base"/>
+  <paragraphStyle paragraphSpacing="0" paragraphSpacingBefore="1" id="project" extendsParagraphStyleID="base"/>
+  <!--Window-->
+  <window foregroundColorID="foreground" backgroundColorID="background" shouldUseHUDScrollers="yes"/>
+  <!--@done-->
+  <color id="done" extendsColorID="done"/>
+  <characterStyle foregroundColorID="done" id="done" fontID="base" strikethroughStyle="NSUnderlineStyleSingle"/>
+  <entryRule matchesQuery="@done" contentCharacterStyleID="done"/>
+  <!--GroupHeader-->
+  <color id="groupHeader" extendsColorID="header"/>
+  <entryRule paragraphStyleID="groupHeader" matchesQuery="isgroupheader" lineCharacterStyleID="groupHeader"/>
+  <font size="14" id="groupHeader" name="Helvetica"/>
+  <characterStyle foregroundColorID="header" id="groupHeader" fontID="groupHeader"/>
+  <paragraphStyle paragraphSpacing="7" paragraphSpacingBefore="12" id="groupHeader" extendsParagraphStyleID="base"/>
+  <!--textView-->
+  <font size="12" id="base" name="Helvetica"/>
+  <textView shouldShowNoteHandles="yes" tagColorID="tag" handleColorID="handle" shouldShowProjectHandles="yes" selectionColorID="selection" shouldAntialiasText="yes" insertionPointColorID="insertionPoint" defaultCharacterStyleID="base"/>
+  <characterStyle foregroundColorID="foreground" id="base" fontID="base"/>
+  <paragraphStyle paragraphSpacing="4" paragraphSpacingBefore="0" lineSpacing="0" lineHeightMultiple="1.0" id="base" alignment="NSLeftTextAlignment"/>
+  <!--Note-->
+  <font size="14" id="garamond" name="Garamond"/>
+  <color id="note" extendsColorID="note"/>
+  <font id="note" extendsFontID="garamond"/>
+  <characterStyle foregroundColorID="note" id="note" fontID="note"/>
+  <entryRule paragraphStyleID="base" matchesQuery="type = note" lineCharacterStyleID="note"/>
+  <!--@overdue-->
+  <color id="overdue" extendsColorID="overdue"/>
+  <characterStyle foregroundColorID="overdue" id="overdue" fontID="overdue"/>
+  <entryRule matchesQuery="@overdue and not @done" lineCharacterStyleID="overdue"/>
+  <!--@priority-->
+  <color id="priority" extendsColorID="priority"/>
+  <characterStyle foregroundColorID="priority" id="priority" fontID="base"/>
+  <entryRule matchesQuery="@high and not @done" lineCharacterStyleID="priority"/>
+  <!--@today-->
+  <color id="today" extendsColorID="today"/>
+  <characterStyle foregroundColorID="today" id="today" fontID="base"/>
+  <entryRule matchesQuery="@today and not @done" lineCharacterStyleID="today"/>
+</theme>
