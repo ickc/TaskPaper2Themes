@@ -9,11 +9,11 @@
     <color id="handle" extendsColorID="foreground" />
     <color id="insertionPoint" extendsColorID="foreground" />
     <color id="selection" red="0.7" green="0.835" blue="1" alpha="1.0" />
-    <font id="base" name="Helvetica Light" size="12" />
-    <font id="bolder" name="Helvetica" size="12" />
-    <font id="lighter" name="Helvetica Light" size="12" />
+    <font id="base" name="Helvetica Light" size="10" />
+    <font id="bolder" name="Helvetica" size="10" />
+    <font id="lighter" name="Helvetica Light" size="10" />
     <characterStyle id="base" fontID="base" foregroundColorID="foreground" />
-    <paragraphStyle id="base" paragraphSpacingBefore="0" paragraphSpacing="0" lineSpacing="1.5" lineHeightMultiple="0.0" alignment="NSLeftTextAlignment" />
+    <paragraphStyle id="base" paragraphSpacingBefore="0" paragraphSpacing="0" lineSpacing="1.2" lineHeightMultiple="0.0" alignment="NSLeftTextAlignment" />
     <textView
         shouldAntialiasText="yes"
         shouldShowNoteHandles="yes"
@@ -34,43 +34,43 @@
 
     <!-- Project style -->
     <color id="project" red="0" green="0.256" blue="0.5" alpha="1.0" />
-    <font id="project" name="Helvetica Neue Light" size="13" />
+    <font id="project" name="Helvetica Neue Light" size="11" />
     <characterStyle id="project" fontID="project" foregroundColorID="project" />
-    <paragraphStyle id="project" extendsParagraphStyleID="base" paragraphSpacingBefore="1" paragraphSpacing="12" />
+    <paragraphStyle id="project" extendsParagraphStyleID="base" paragraphSpacingBefore="1" paragraphSpacing="1.2" />
     <entryRule matchesQuery="type = &quot;project&quot;" lineCharacterStyleID="project" paragraphStyleID="project" />
 
     <!-- Project level 1 style -->
-    <font id="project1" name="Helvetica Neue Light" size="16" />
+    <font id="project1" name="Helvetica Neue Light" size="14" />
     <characterStyle id="project1" fontID="project1" foregroundColorID="project1" />
-    <paragraphStyle id="project1" extendsParagraphStyleID="project" paragraphSpacingBefore="4" />
+    <paragraphStyle id="project1" extendsParagraphStyleID="project" paragraphSpacingBefore="1.2" />
     <entryRule matchesQuery="type = &quot;project&quot; and level = 1 -a" lineCharacterStyleID="project1" paragraphStyleID="project1" />
 
     <!-- Project level 2 style -->
-    <font id="project2" name="Helvetica Neue Light" size="15" />
+    <font id="project2" name="Helvetica Neue Light" size="13" />
     <characterStyle id="project2" fontID="project2" foregroundColorID="project2" />
-    <paragraphStyle id="project2" extendsParagraphStyleID="project" paragraphSpacingBefore="3" />
+    <paragraphStyle id="project2" extendsParagraphStyleID="project" paragraphSpacingBefore="1.2" />
     <entryRule matchesQuery="type = &quot;project&quot; and level = 2 -a" lineCharacterStyleID="project2" paragraphStyleID="project2" />
 
    <!-- Project level 3 style -->
-    <font id="project3" name="Helvetica Neue Light" size="14" />
+    <font id="project3" name="Helvetica Neue Light" size="12" />
     <characterStyle id="project3" fontID="project3" foregroundColorID="project3" />
-    <paragraphStyle id="project3" extendsParagraphStyleID="project" paragraphSpacingBefore="2" />
+    <paragraphStyle id="project3" extendsParagraphStyleID="project" paragraphSpacingBefore="1.2" />
     <entryRule matchesQuery="type = &quot;project&quot; and level = 3 -a" lineCharacterStyleID="project3" paragraphStyleID="project3" />
 
     <!-- Note style -->
     <color id="note" red="0.45" green="0.45" blue="0.45" alpha="1.0" />
     <font id="note" extendsFontID="lighter" />
     <characterStyle id="note" fontID="note" foregroundColorID="note" />
- <paragraphStyle id="note" extendsParagraphStyleID="base" paragraphSpacingBefore="0" paragraphSpacing="5" />
+ <paragraphStyle id="note" extendsParagraphStyleID="base" paragraphSpacingBefore="0" paragraphSpacing="1.2" />
     <entryRule matchesQuery="type = note" lineCharacterStyleID="note" paragraphStyleID="note" />
 
     <!-- GroupHeader style (top level projects) -->
     <color id="clear" red="1.0" green="1.0" blue="1.0" alpha="0.0" />
     <gradient id="groupHeader" startColorID="foreground" endColorID="clear" angle="0" />
     <color id="groupHeader" red="0.67" green="0.137" blue="0.136" alpha="1.0" />
-    <font id="groupHeader" name="Helvetica Neue Light" size="17" />
+    <font id="groupHeader" name="Helvetica Neue Light" size="15" />
     <characterStyle id="groupHeader" fontID="groupHeader" foregroundColorID="groupHeader" />
-    <paragraphStyle id="groupHeader" extendsParagraphStyleID="base" paragraphSpacingBefore="20" paragraphSpacing="12" />
+    <paragraphStyle id="groupHeader" extendsParagraphStyleID="base" paragraphSpacingBefore="1.2" paragraphSpacing="1.2" />
     <backgroundStyle
         id="groupHeader"
         maxWidth="0"
